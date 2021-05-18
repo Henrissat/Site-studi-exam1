@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 0;
+    margin:0;
+}
+
+body, html{
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1,5;
+
+}
+
+
+/* MENU */
+
+header{
+    display:flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 137px;
+    width: auto;
+    padding: 0;
+    justify-content: left;
+}
+.top-bg-nav{
+    height: 50px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-image: url(images/bg_nav.jpg) ;
+    border-bottom: 1px solid #d1d1d1;
+    z-index: -1;
+}
+
+.logo-top-menu{
+    background: url(images/logo_hegalaldia.png) center center no-repeat;
+    background-color: white;
+    width: 206px;
+    height: 128px;
+    padding:10px;
+    margin-left: 70px;
+    background-size: cover;
+
+}
+
+.nav_top{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 75px;
+    width: auto;
+    padding: 0;
+    margin-left: 50px;
+}
+.nav_top ul {
+    list-style-type: none;
+}
+
+.nav_top ul li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    padding: 20px 10px;
+  }
+.nav_top a{
+    display: block;
+    text-decoration: none;
+    color: #304f3d;
+    padding: 10px 0px;
+}
+.nav_top a:hover{
+    color: orange;
+    text-decoration: none;
+    border-bottom: 2px solid gold;
+}
+
+/* SLIDER */
+
+#content_slider{
+    display: flex;
+    background: url(images/bobcat-3924734-1920.jpg) top center no-repeat;
+    width: 100%;
+    height: 1165px;
+    background-size: contain;
+    z-index: 100;
+    padding: 0;
+    margin:0;
+}
+.container{
+    display: grid;
+}
+
