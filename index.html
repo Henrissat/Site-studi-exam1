@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="logo-top-menu"><a href="index.html"></a></div>
-            <!--<div class="top-bg-nav"></div>-->
+            <div class="top-bg-nav"></div>
             <nav class="nav_top" role="navigation">
+                
+                <div class="logo-top-menu"><a href="index.html"><img src="images/logo_hegalaldia.png" alt="logo"></a></div>
                 <ul>
                     <li class="menu-item"><a href="index.html">Qui sommes-nous ?</a></li>
                     <li class="menu-item"><a href="centre-soins.html">Le centre de soins</a></li>
                     <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    
                 </ul>
             </nav>
+            <a class="donation" href="contact.html">Faire un Don</a>
         </header>
         <div id="content_slider" >
-            
-            <div class="slider_top_home">
-
+            <div class="caption-header">
+                <span class="title_caption">
+                    <h1><span class="title_caption_min">Association départementale </span><br>
+                    pour la sauvegarde de la faune sauvage</h1>
+                    <div class="separation"></div>
+                    <p class="txt-slider">Sauver les espèces emblématiques des pyrénées menacées</p>
+                </span>
             </div>
 
         </div>
-        <main class="container" > 
-            <div class="row">
-                <div class="col-md-3">
-                    <h1>text 1</h1>
-                </div>    
-                <div class="col-md-9">
-                    <p>Mon text ici</p>
+        <div class="container" > 
+            <div class="home-wrapper">
+                <section class="home-first">
+                    <h2>Hegalaldia : Une association de protection de la nature</h2>
+                    <div class="separation-middle"></div>
+                    <p class="txt-intro">Hegalaldia est une association Loi 1901, déclarée d’intérêt général et agréée association de protection de la nature. L’association gère le seul Centre de Soins pour la Faune Sauvage des Pyrénées Atlantiques, qui est soumis à une réglementation particulière. Mais le Centre de sauvegarde n’est pas la seule mission d’Hegalaldia : d’autres actions de terrain se sont développées peu à peu, ce qui a donné naissance à des projets de gestion divers.</p>
+                </section> 
+            </div>
+        </div>
+        <div class="fullwidth-background">
+            <div class="container" > 
+                <div class="home-wrapper"></div>
+                    <section class="home-second">
+                        <p><b>Un centre de soin à la faune sauvage a pour mission de venir en aide aux animaux sauvages en détresse, blessés, orphelins, en danger… afin de les soigner, dans le but ultime de les relâcher dans la nature.</b><br> Cela comprend plusieurs étapes, toutes essentielles à la réussite de cette mission :</p>
+                        <br>
+                        <ul>
+                            <li>Le rapatriement de l’animal en détresse dans de bonnes conditions, le plus  rapidement possible sur la structure.</li>
+                            <li>Le diagnostic et le soin de l’individu.</li>
+                            <li>La réhabilitation de l’animal afin qu’il puisse recouvrir la capacité de survivre seul dans la nature.</li>
+                            <li>Le relâcher lorsque l’animal est prêt.</li>
+                        </ul>
+                        <br>
+                        <p>Cette mission de sauvegarde est d’intérêt général puisqu’il s’agit là de notre patrimoine naturel commun. Les animaux accueillis sont pour la plupart du temps victimes de nos activités : chocs contre des baies vitrées, des véhicules ou des câbles électriques; mazoutage lors de marées noires ou de dégazages clandestins plus discrets, dénichées lors de jardinage, tirs,…
+                        
+                        Les populations faunistiques sont en perpétuelle diminution de par l’urbanisation, la perte des habitats, les pollutions des eaux, le réchauffement climatique… Les espèces disparaissent petit à petit : nous connaissons en ce moment la sixième extinction de masse, qui est la plus meurtrière que la Terre ait jamais connue. C’est pourquoi il est important d’intervenir.
+                        
+                        Les Centres de soins travaillent avec de nombreux acteurs : des cliniques vétérinaires, des associations de protection de la nature, des bureaux d’études, des fédérations de chasse et de pêche, l’ONF, L’ONCFS, le Ministère de l’agriculture et de l’environnement….</p>
+                    </section>
+                    <section class="home-fird">
+                        <div class="home-bird01"></div>
+                        <figcaption>Les espèces menacées les plus emblématiques des pyrénées sont préservées</figcaption>
+                    </section>
                 </div>
             </div>
-        </main>
+        </div>
+        <div class="container">
+            <div class="home-wrapper">
+                <section class="home-slider">
+                    <div>
+                        <i>
+                            <input checked type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=1');" title="Random Picture 1">
+                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');" title="Random Picture 2">
+                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');" title="Random Picture 3">
+                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');" title="Random Picture 4">
+                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');" title="Random Picture 5">
+                        </i>
+                    </div>
+                </section>
+            </div>
+        </div>
         <footer>Footer</footer>
     </body>
 </html>
