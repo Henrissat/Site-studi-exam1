@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <title>Hegalaldia - Centre de soins pour animaux sauvages</title>
+        <meta name="title" content="Hegalaldia - Centre de soins pour animaux sauvages">
+        <meta description="Association de protection de la nature reconnue d'intêret général, située dans les Pyrénées-Atlantiques (64)">
+        <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -11,7 +14,11 @@
             <div class="top-bg-nav"></div>
             <nav class="nav_top" role="navigation">
                 
-                <div class="logo-top-menu"><a href="index.html"><img src="images/logo_hegalaldia.png" alt="logo"></a></div>
+                <div class="logo-top-menu">
+                    <a href="index.html">
+                        <img src="images/logo_hegalaldia.png" alt="logo hegalaldia">
+                    </a>
+                </div>
                 <ul>
                     <li class="menu-item"><a href="index.html">Qui sommes-nous ?</a></li>
                     <li class="menu-item"><a href="centre-soins.html">Le centre de soins</a></li>
@@ -21,19 +28,23 @@
             </nav>
             <a class="donation" href="contact.html">Faire un Don</a>
         </header>
-        <div id="content_slider" >
-            <div class="caption-header">
-                <span class="title_caption">
+        <div class="header-slider">
+            <div id="content_slider"></div>
+            <div class="caption-header" >
+                <div class="title_caption">
                     <h1><span class="title_caption_min">Association départementale </span><br>
                     pour la sauvegarde de la faune sauvage</h1>
                     <div class="separation"></div>
                     <p class="txt-slider">Sauver les espèces emblématiques des pyrénées menacées</p>
-                </span>
+                </div>
             </div>
-
+            <div class="scrolldown-container">
+                <div class="m-more">EN SAVOIR PLUS</div>
+                <div class="array-scroll-down icon-scroll"><img src="images/scroll-icon.svg"></div>
+            </div>
         </div>
         <div class="container" > 
-            <div class="home-wrapper">
+            <div class="page-style-section">
                 <section class="home-first">
                     <h2>Hegalaldia : Une association de protection de la nature</h2>
                     <div class="separation-middle"></div>
@@ -43,45 +54,94 @@
         </div>
         <div class="fullwidth-background">
             <div class="container" > 
-                <div class="home-wrapper"></div>
+                <div class="page-style-section">
                     <section class="home-second">
+                        <img src="images/bird01.jpg" title="Geai des chênes relâché en avril 2021">
+                        <!--<div class="home-bird01"></div>-->
+                        <figcaption>Les espèces menacées les plus emblématiques des pyrénées sont préservées</figcaption>
+                    </section>
+                    <section class="home-fird">
+                        <h3>Nos missions</h3><br>
                         <p><b>Un centre de soin à la faune sauvage a pour mission de venir en aide aux animaux sauvages en détresse, blessés, orphelins, en danger… afin de les soigner, dans le but ultime de les relâcher dans la nature.</b><br> Cela comprend plusieurs étapes, toutes essentielles à la réussite de cette mission :</p>
-                        <br>
+                        <br><br>
                         <ul>
                             <li>Le rapatriement de l’animal en détresse dans de bonnes conditions, le plus  rapidement possible sur la structure.</li>
                             <li>Le diagnostic et le soin de l’individu.</li>
                             <li>La réhabilitation de l’animal afin qu’il puisse recouvrir la capacité de survivre seul dans la nature.</li>
                             <li>Le relâcher lorsque l’animal est prêt.</li>
                         </ul>
-                        <br>
+                        <br><br>
                         <p>Cette mission de sauvegarde est d’intérêt général puisqu’il s’agit là de notre patrimoine naturel commun. Les animaux accueillis sont pour la plupart du temps victimes de nos activités : chocs contre des baies vitrées, des véhicules ou des câbles électriques; mazoutage lors de marées noires ou de dégazages clandestins plus discrets, dénichées lors de jardinage, tirs,…
                         
                         Les populations faunistiques sont en perpétuelle diminution de par l’urbanisation, la perte des habitats, les pollutions des eaux, le réchauffement climatique… Les espèces disparaissent petit à petit : nous connaissons en ce moment la sixième extinction de masse, qui est la plus meurtrière que la Terre ait jamais connue. C’est pourquoi il est important d’intervenir.
                         
                         Les Centres de soins travaillent avec de nombreux acteurs : des cliniques vétérinaires, des associations de protection de la nature, des bureaux d’études, des fédérations de chasse et de pêche, l’ONF, L’ONCFS, le Ministère de l’agriculture et de l’environnement….</p>
                     </section>
-                    <section class="home-fird">
-                        <div class="home-bird01"></div>
-                        <figcaption>Les espèces menacées les plus emblématiques des pyrénées sont préservées</figcaption>
-                    </section>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="home-wrapper">
-                <section class="home-slider">
-                    <div>
-                        <i>
-                            <input checked type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=1');" title="Random Picture 1">
-                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');" title="Random Picture 2">
-                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');" title="Random Picture 3">
-                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');" title="Random Picture 4">
-                            <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');" title="Random Picture 5">
-                        </i>
-                    </div>
-                </section>
-            </div>
+        <div class="fullwidth-slider">
+                <div>
+                    <i>
+                        <input checked type="radio" name="s" style="background-image: url('images/fiche-animale-monde-animal-lynx-roux.jpg');" title="Association départementale pour la sauvegarde de la faune">
+                        <input type="radio" name="s" style="background-image: url('images/parc-animalier-des-pyrenees-loups.jpg');" title="Le loup, présent dans le Razès (Aude) depuis 2014">
+                        <input type="radio" name="s" style="background-image: url('images/Rodents_Mountains_Marmot_456188_1920x1080.jpg');" title="Animaux de montagne : respecter les marmottes">
+                        <input type="radio" name="s" style="background-image: url('images/bobcat-3924734-1920.jpg');" title="Oui, le lynx y est bien présent">
+                    </i>
+                </div>
         </div>
-        <footer>Footer</footer>
+        <footer>
+            <div class="container-footer" > 
+                <footer class="footer-row">
+                    <div class="column">
+                        <span class="title-footer">S’engager</span>
+                        <div class="separation-footer"></div>
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="#">Faire un don</a></li>
+                                <li><a href="#">Nos campagnes</a></li>
+                                <li><a href="#">Devenir bénévole</a></li>
+                                <li><a href="#">Faire un legs</a></li>
+                                <li><a href="#">Boutique</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="title-footer">S’informer</span>
+                        <div class="separation-footer"></div>
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="#">Actualités</a></li>
+                                <li><a href="#">L'Effet Lynx</a></li>
+                                <li><a href="#">Devenir bénévole</a></li>
+                                <li><a href="#">Traces du Loup</a></li>
+                                <li><a href="#">Podcast</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="title-footer">Accueil des animaux</span>
+                        <div class="separation-footer"></div>
+                        <div class="menu-footer"><a>7j/7 :<br>
+                            Période estivale : 9h-19h<br>
+                            Période hivernale : 9h-17h<br>
+                            Permanence téléphonique 7j/7 : 9h-18h</a></div>
+                    </div>
+                    <div class="column">
+                        <span class="title-footer">Newsletter</span>
+                        <div class="separation-footer"></div>
+                        <div class="menu-footer"><a>Une fois par mois environ, recevez l'actualité d'Hegalaldia directement dans votre boîte e-mail.</a>
+                        </div>
+                        <button><a href="#">Je m'inscris</a></button>
+                    </div>
+                    <div class="copyright">
+                        <a><b>hegalaldia</b><br>
+                         Quartier Arrauntz - Chemin Bereterrenborda - 64 480 Ustaritz - </a>
+                         <a href="tel:+33559430851">Tél : 05 59 43 08 51</a><a href="tel:+330676831331">- Portable : 06 76 83 13 31</a><br><a>
+                         © 2019 Hegalaldia</a>
+                    </div>
+                </footer>
+            </div>
+        </footer>
     </body>
 </html>
