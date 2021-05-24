@@ -270,6 +270,13 @@ header{
   grid-row: 1/2 ;
   padding: 0 0 3em 0;
 }
+.home-second>img{
+  display: flex;
+  flex:100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
 .home-fird{
   grid-column: 1/3;
   grid-row: 2/3 ;
@@ -287,13 +294,51 @@ header{
   line-height: 1.7em;
   color: #313131;
 }
-
-.home-second>img{
-  display: flex;
-  flex:100%;
+.home-four{
+  grid-column: 1/3;
+  grid-row: 1 ;
+  padding: 3em 0 1em 0;
+  text-align: center;
+}
+.home-five{
+  grid-column: 1/3;
+  grid-row: 2 ;
+  margin-bottom: 300px;
+  background: url(images/espece-min.jpg) center top no-repeat;
+  background-size: 100%;
+  height: 354px;
+  text-align: center;
+  padding: 1em ;
+}
+.home-six{
+  grid-column: 1/3;
+  grid-row: 3 ;
+  margin-bottom: 7em;
+  background: url(images/chouette-cheveche-athenas-img_4344.jpg) top center no-repeat;
+  background-size: 100%;
+  height: 354px;
+  text-align: center;
+  padding: 1em ;
+}
+.bloc-img-txt{
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  max-width: 100%;
-  margin: 0;
+  height: 200px ;
+  max-width: 500px;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.title-bloc-img{
+  font-size: 1.1em;
+  color: #304f3d;
+  padding-bottom: 10px;
+}
+.page-style-section .home-five p{
+  line-height: 1.7em;
+}
+.page-style-section .home-six p{
+  line-height: 1.7em;
 }
 figcaption {
   text-align: center;
@@ -307,6 +352,9 @@ figcaption {
   height: 100%;
   background-color: #e6f5ec;
   z-index: -100;
+}
+.bloc-separation{
+  height: 5em;
 }
 
 /* CARROUSSELLE */
@@ -414,7 +462,7 @@ input:checked + input ~ input:before {
 	display: none;
 }
 
-/* CARROUSSELLE */
+/* FOOTER */
 
 footer{
   height: 100%;
@@ -424,8 +472,6 @@ footer{
 .footer-flex{
   display: flex;
 }
-/* FOOTER */
-
 .footer-row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -445,7 +491,6 @@ footer{
   color: #fff;
   font-family: 'Roboto condensed', sans-serif;
 }
-
 .separation-footer{
   width: 10%;
   height: 2px;
@@ -465,16 +510,16 @@ footer{
   text-decoration: none;
   color: rgb(194, 194, 194);
  }
- .menu-footer ul li a:hover{
+.menu-footer ul li a:hover{
   text-decoration: underline;
   color: #e25721;
- }
- .container-footer .footer-row .column button{
-   margin-top: 30px;
-   padding: 10px;
-   background-color: #e25721;
-   border:0;
- }
+}
+.container-footer .footer-row .column button{
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #e25721;
+  border:0;
+}
  .container-footer .footer-row .column button a{
   text-decoration: none;
   color: #fff;
@@ -485,12 +530,12 @@ footer{
   text-align: center;
   margin: 0 auto;
 }
- .container-footer .footer-row .copyright a{
-   font-size: 0.6em;
-   text-align: center;
-   text-decoration: none;
-   color: rgb(117, 117, 117);
- }
+.container-footer .footer-row .copyright a{
+  font-size: 0.6em;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+}
 
 
 /* Responsive layout - two column */
@@ -662,9 +707,9 @@ footer{
     max-width: 1300px;
     margin: 0 auto;
   }
-  .page-style-section{
+  /*.page-style-section{
     grid-auto-rows: minmax(300px, auto);
-  }
+  }*/
   .home-second{
     grid-column: 2/3;
     grid-row: 1;
@@ -677,6 +722,29 @@ footer{
     padding: 3em 0 3em 0;
     margin: 1em;
     justify-content: center;
+  }
+  .home-five{
+    grid-column: 1/2;
+    grid-row: 2 ;
+    margin: 1em;
+    margin-bottom: 3em;
+    background: url(images/espece-min.jpg) center top no-repeat;
+    background-size: 100%;
+    height: 354px;
+    text-align: center;
+    padding: 1em ;
+  }
+  .home-six{
+    grid-column: 2/3;
+    grid-row: 2 ;
+    padding: 0 0 3em 0;
+    margin: 1em;
+    margin-bottom: 3em;
+    background: url(images/chouette-cheveche-athenas-img_4344.jpg) top center no-repeat;
+    background-size: 100%;
+    height: 354px;
+    text-align: center;
+    padding: 1em ;
   }
   .column {
     margin: 0;
@@ -691,71 +759,5 @@ footer{
       transform: scale(1.05);
       box-shadow: 0 0 3px rgba(39, 39, 39, 0.64);
   }
-   /* array en savoir plus 
-
-   @-webkit-keyframes bounce {
-    0%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    }
-    40% {
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    }
-    }
-    @keyframes bounce {
-    0%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    }
-    40% {
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    }
-  }
-  .scrolldown-container .array-scroll-down { 
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-  }
-
-  .scrolldown-container{
-    position:relative;
-    background: url(images/grunge-effect.png) bottom no-repeat;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    bottom:75px;
-  }
-  .scrolldown-container .m-more{
-    position:relative;
-    font-family: 'roboto condensed', sans-serif;
-    width: 100%;
-    color: #fff;
-    margin-bottom: 10px;
-    bottom: 55px;
-  }
-  .icon-scroll{
-    position:relative;
-    width: 50px;
-    height: 50px;
-    background: url(images/scroll-icon.svg) center;
-    opacity:70%;
-    margin: 0 auto;
-    bottom: 55px;
-  }*/
 
 }
