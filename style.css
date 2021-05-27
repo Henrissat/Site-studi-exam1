@@ -51,9 +51,6 @@ p {
   line-height: 1.7em;
 }
 
-
-
-
 /* ---- MOBILEFIRST ---- */
 
 /* MENU */
@@ -112,7 +109,10 @@ header{
   line-height: 1;
   padding: .8rem 1rem;
   border-bottom: 1px dotted;
-  z-index: 100;
+  z-index: 150;
+}
+.menu-item .button-on{
+  color: #e25721;
 }
 
 /*STYLING LOGO*/
@@ -121,8 +121,8 @@ header{
   background:#fff;
 }
 
-/* HEADER SLIDER */
 
+/* HEADER SLIDER */
 
 
 #content_slider{
@@ -259,6 +259,7 @@ header{
   align-items: center;
   flex-wrap: wrap;
 }
+
 .home-first{
   grid-column: 1 / 3;
   padding: 3em 0 3em 0;
@@ -356,6 +357,145 @@ figcaption {
 .bloc-separation{
   height: 5em;
 }
+
+/*PAGE CENTRE SOINS*/
+
+
+#content_slider_centreSoins{
+  filter: brightness(80%);
+  background: url(images/ours-pyrenees.jpg) top center no-repeat ;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 800px;
+  background-size:auto;
+  padding: 0;
+  margin:0;
+  margin-top: 270px;
+}
+.back-centresoins{
+  background-color: #f0e2dd;
+}
+.page-style-sectionTriple{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+  gap: 3rem;
+  margin: 0 0 3rem;
+}
+.article-card{
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  display:flex;
+  flex-direction: column;
+  background-color: #304f3d;
+  margin-top: 4em;
+}
+.article-card .card h3{
+  font-size: 1.3em;
+}
+.picto{
+  display: flex;
+  width: 280px;
+  height: 280px;
+  box-shadow: 3px 3px 5px rgba(39, 39, 39, 0.64);
+  background-color: #fff;
+  transform: rotate(4deg);
+  border-radius: 3px;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top:-70px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1em;
+  padding: top 6px;0px;
+}
+.card h3{
+  background-color: #304f3d;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.card p{
+  color: #fff;
+}
+.button-card{
+  background-color:#fff ;
+  color: #e25721;
+  border-radius: 40px;
+  border: 2px solid #e25721;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 1em;
+  padding: 14px 30px;
+  bottom: 0px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #e25721;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.button_slide {
+  padding: 18px 36px;
+  font-family: "roboto condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #e25721;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;s
+}
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #e25721;
+  color:#fff;
+}
+.fullwidth-img-centerSoins{
+  filter: brightness(70%);
+  background: url(images/wolf_960x1920_pyrenees.jpg) left center no-repeat ;
+  background-position-x: -500px;
+  height: 750px;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  margin:0 auto;
+  margin-top: 0px;
+  z-index: -100;
+}
+.slider-footer-centerSoins{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  bottom: 500px;
+
+}
+.slider-grunge{
+  position:relative;
+  background: url(images/grunge-effect.png) top no-repeat;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  transform: rotate(180deg);
+  top:-260px;
+}
+.caption-slider-centerSoins{
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.fullwidth{
+  width: 100%;
+  height: 750px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
 
 /* CARROUSSELLE */
 
@@ -514,13 +654,13 @@ footer{
   text-decoration: underline;
   color: #e25721;
 }
-.container-footer .footer-row .column button{
+.btn-donation{
   margin-top: 30px;
   padding: 10px;
   background-color: #e25721;
   border:0;
 }
- .container-footer .footer-row .column button a{
+.btn-donation a{
   text-decoration: none;
   color: #fff;
 }
@@ -536,6 +676,10 @@ footer{
   text-decoration: none;
   color: rgb(117, 117, 117);
 }
+
+
+
+/* --- RESPONSIVE --- */ 
 
 
 /* Responsive layout - two column */
@@ -628,9 +772,10 @@ footer{
   }
   .donation{
     display: flex;
+    position: fixed;
+    right: 10px;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     border : none;
     margin : 7px 20px 0 0;
     padding:1rem 2rem;
@@ -670,6 +815,15 @@ footer{
   }
 
   #content_slider{
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding: 0;
+    margin:0 auto;
+    margin-top: 0px;
+  }
+  #content_slider_centreSoins{
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -751,13 +905,17 @@ footer{
     padding-left: 2em;
   }
 
-  .container-footer .footer-row .column button{
-      transform: scale(1);
-      transition: transform 300ms;
-      }
-  .container-footer .footer-row .column button:hover{
-      transform: scale(1.05);
-      box-shadow: 0 0 3px rgba(39, 39, 39, 0.64);
+  .btn-donation{
+    transform: scale(1);
+    transition: transform 300ms;
+    }
+  .btn-donation:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 3px rgba(39, 39, 39, 0.64);
+  }
+  .fullwidth-img-centerSoins{
+    background-position-x: 0px;
+
   }
 
 }
