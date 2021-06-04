@@ -107,24 +107,22 @@ header{
 .nav_top ul li{
   border-bottom: 1px dotted;
 }
-.btn-donation-header{
-  position: relative;
-  width: 100%;
-  z-index: 150;
-}
-
 .donation{
   display:block;
+  position: relative;
   background-color: #e25721;
   border: none;
-  margin:0;
   padding:0;
   width: 100%;
   text-decoration: none;
   color: #fff;
   line-height: 1;
   padding: .8rem 1rem;
-  z-index: 100;
+  border-bottom: 1px dotted;
+  z-index: 150;
+}
+.menu-item .button-on{
+  color: #e25721;
 }
 
 /*STYLING LOGO*/
@@ -386,6 +384,7 @@ figcaption {
   padding: 0;
   margin:0;
   margin-top: 270px;
+  z-index: 0;
 }
 .back-centresoins{
   background-color: #f0e2dd;
@@ -821,16 +820,12 @@ footer{
   .nav_top ul li a{
     padding:1.2rem 1rem;
   }
-  .btn-donation-header{
-    position: fixed;
-    right: 10px;
-    z-index: 150;
-  }
   .donation{
     display: flex;
+    position: fixed;
+    right: 10px;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     border : none;
     margin : 7px 20px 0 0;
     padding:1rem 2rem;
@@ -839,6 +834,7 @@ footer{
     line-height: 0;
     transform: scale(1);
     transition: transform 300ms;
+    z-index: 150;
   }
   .donation:hover {
     transform: scale(1.05);
@@ -862,9 +858,6 @@ footer{
   }
   .nav_top ul li a:hover::after,.nav_top ul li a:hover::before{
     width: 100%;
-  }
-  .btn-nav-on{
-    color:#e25721;
   }
 
   /* SLIDER HEADER */
